@@ -1,15 +1,15 @@
 [
 {
   "modid": "statues",
-  "name": "Statues",
-  "description": "Adds a hammer used to craft Statues.",
+  "name": "Statues Mod",
+  "description": "Adds a hammer used to craft Statues as well as a fancy showcase for items.",
   "version": "${version}",
-  "credits": "AUTOMATIC_MAIDEN",
   "logoFile": "",
+  "credits": "AUTOMATIC_MAIDEN, asiekierka",
   "mcversion": "${mcversion}",
-  "url": "",
-  "updateUrl": "",
-  "authors": [ "AUTOMATIC_MAIDEN", "asiekierka" ],
+  "url": "https://github.com/Doenerstyle/Statues",
+  "updateUrl": "https://github.com/Doenerstyle/Statues/releases",
+  "authorList": [ "AUTOMATIC_MAIDEN", "asiekierka", "Doenerstyle" ],
   "parent":"",
   "screenshots": [],
   "dependencies": ["asielib"]
