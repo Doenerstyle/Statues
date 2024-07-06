@@ -24,12 +24,16 @@ public class StatueTextureDownloaded extends AbstractTexture {
 	
 	static HashMap<String,BufferedImage> playerTextures=new HashMap<String,BufferedImage>();
 
-	public StatueTextureDownloaded(ResourceLocation skinReshource,final String url,AbstractTexture fallback,IImageBuffer imageEffect) {
+	public StatueTextureDownloaded(ResourceLocation skinResource,final String url,AbstractTexture fallback,IImageBuffer imageEffect) {
 		imageUrl = url;
 		fallbackTexture = fallback;
 		effect = imageEffect;
 		
-		bufferedImage=playerTextures.get(url);
+		// Skip trying to download player skins from a dead endpoint
+		bufferedImage = null;
+		return;
+		
+		/*bufferedImage=playerTextures.get(url);
 		if(bufferedImage!=null) return;
 		
 		ResourceLocation origLocation=new ResourceLocation("statues:skins/"+url);
@@ -51,7 +55,7 @@ public class StatueTextureDownloaded extends AbstractTexture {
 				}
 			});
 			texturemanager.loadTexture(origLocation, data);
-		}
+		}*/
 	}
 
 	@Override
