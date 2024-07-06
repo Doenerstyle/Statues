@@ -34,6 +34,11 @@ public class TileEntityStatue extends TileEntityInventory {
 	public int getSizeInventory() {
 		return 6;
 	}
+	
+	@Override
+	public String getInventoryName() {
+		return "Statue";
+	}
 
 	public EntityStatuePlayer getStatue(){
 		if(clientPlayer==null){

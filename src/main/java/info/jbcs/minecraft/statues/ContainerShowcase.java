@@ -16,6 +16,6 @@ public class ContainerShowcase extends ContainerBase {
 
 		bindPlayerInventory(inventory, 48, 144);
 		
-		tile.openInventory();
+		tile.openInventory(); // Removing this line fixes the lid not closing in the dev environment, but not in the built jar.
 	}
 }
