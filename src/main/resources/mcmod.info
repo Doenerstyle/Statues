@@ -4,7 +4,7 @@
   "name": "Statues Mod",
   "description": "Adds a hammer used to craft Statues as well as a fancy showcase for items.",
   "version": "${version}",
-  "logoFile": "",
+  "logoFile": "logo.png",
   "credits": "AUTOMATIC_MAIDEN, asiekierka",
   "mcversion": "${mcversion}",
   "url": "https://github.com/Doenerstyle/Statues",
