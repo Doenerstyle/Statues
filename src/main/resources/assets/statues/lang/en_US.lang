@@ -2,3 +2,10 @@ item.statues.statue.name=Statue
 item.statues.marteau.name=Hammer
 item.statues.showcase.name=Showcase
 item.statues.palette.name=Palette
+
+gui.statues.sculpt.playername=Player name:
+gui.statues.sculpt.randomize=Randomize
+gui.statues.sculpt.sculpt=Sculpt!
+
+tile.statues.statue.name=Statue
+tile.statues.showcase.name=Showcase

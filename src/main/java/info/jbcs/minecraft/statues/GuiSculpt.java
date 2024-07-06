@@ -10,6 +10,7 @@ import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.renderer.RenderHelper;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
@@ -49,11 +50,11 @@ public class GuiSculpt extends GuiScreenPlus  {
 		blockMeta=world.getBlockMetadata(worldX, worldY, worldZ);
 		
 		
-		addChild(new GuiLabel(63, 136, "Player name:"));
+		addChild(new GuiLabel(63, 136, StatCollector.translateToLocal("gui.statues.sculpt.playername")));
 		addChild(skinNameEdit = new GuiEdit(62, 150, 102, 13));
 		skinNameEdit.setText(skinName);
 
-		addChild(new GuiExButton(9, 174, 209, 20, "Randomize") {
+		addChild(new GuiExButton(9, 174, 209, 20, StatCollector.translateToLocal("gui.statues.sculpt.randomize")) {
 			@Override
 			public void onClick() {
 				scrollerAR.set(rand.nextDouble(), rand.nextDouble());
@@ -65,7 +66,7 @@ public class GuiSculpt extends GuiScreenPlus  {
 			}
 		});
 
-		addChild(new GuiExButton(9, 199, 209, 20, "Sculpt!") {
+		addChild(new GuiExButton(9, 199, 209, 20, StatCollector.translateToLocal("gui.statues.sculpt.sculpt")) {
 			@Override
 			public void onClick() {
 	    		skinName = skinNameEdit.getText();
