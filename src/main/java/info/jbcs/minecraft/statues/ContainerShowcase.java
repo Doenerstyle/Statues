@@ -1,5 +1,5 @@
 /**
- * Container class for the statue
+ * Container class for the Showcase
  */
 
 package info.jbcs.minecraft.statues;
@@ -16,6 +16,6 @@ public class ContainerShowcase extends ContainerBase {
 
 		bindPlayerInventory(inventory, 48, 144);
 		
-		tile.openInventory(); // Removing this line fixes the lid not closing in the dev environment, but not in the built jar.
+		tile.openInventory();
 	}
 }
