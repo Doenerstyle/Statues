@@ -25,7 +25,7 @@ import pl.asie.lib.network.PacketHandler;
 
 import java.io.File;
 
-@Mod(modid = "statues", name = "Statues", version = "2.2.0", dependencies = "required-after:asielib")
+@Mod(modid = "statues", name = "Statues", version = "2.2.1", dependencies = "required-after:asielib")
 public class Statues{
 	static Configuration				config;
 
