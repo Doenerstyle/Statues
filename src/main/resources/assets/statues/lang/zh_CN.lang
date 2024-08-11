@@ -1,4 +1,11 @@
 item.statues.statue.name=雕像
-item.statues.marteau.name=雕刻槌
-item.statues.showcase.name=展示柜台
-item.statues.palette.name=调色板
+item.statues.marteau.name=锤子
+item.statues.showcase.name=展示柜
+item.statues.palette.name=画板
+
+gui.statues.sculpt.playername=玩家名:
+gui.statues.sculpt.randomize=随机Pose
+gui.statues.sculpt.sculpt=建造!
+
+tile.statues.statue.name=雕塑
+tile.statues.showcase.name=展示柜
