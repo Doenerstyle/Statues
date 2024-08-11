@@ -77,7 +77,11 @@ public class Statues{
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
-		skinServerLocation = config.get("general", "skin server location", "http://skins.minecraft.net/MinecraftSkins/", "Download skins from this path.").getString();
+		skinServerLocation = config.get("general", "skin server location", "https://minotar.net/skin/", "Download skins from this path.").getString();
+		
+		// Manually redirecting pre-2.2.1 config files
+		if(skinServerLocation.contains("skins.minecraft.net/MinecraftSkins")) skinServerLocation = "https://minotar.net/skin/";
+		
 		debugImages = config.get("general", "debug skins", false, "Save generated skins to files.").getBoolean(false);
 		
 		packet = new PacketHandler("statues", new Packets(), new Packets());

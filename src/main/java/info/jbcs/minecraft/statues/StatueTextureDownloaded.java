@@ -29,11 +29,7 @@ public class StatueTextureDownloaded extends AbstractTexture {
 		fallbackTexture = fallback;
 		effect = imageEffect;
 		
-		// Skip trying to download player skins from a dead endpoint
-		bufferedImage = null;
-		return;
-		
-		/*bufferedImage=playerTextures.get(url);
+		bufferedImage=playerTextures.get(url);
 		if(bufferedImage!=null) return;
 		
 		ResourceLocation origLocation=new ResourceLocation("statues:skins/"+url);
@@ -55,7 +51,7 @@ public class StatueTextureDownloaded extends AbstractTexture {
 				}
 			});
 			texturemanager.loadTexture(origLocation, data);
-		}*/
+		}
 	}
 
 	@Override
